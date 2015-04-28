@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.giocodestrezza.gioco.activity.CompassGameActivity">
+
+    <TextView
+        android:id="@+id/compass_tv"
+        android:text="@string/compass_game_req"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         />
+
+    <ImageView
+        android:id="@+id/compass_img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compass_img"/>
+    <TextView
+        android:id="@+id/compass_time_tv"
+        android:text="Tempo Residuo 29 Secondi"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/compass_img"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

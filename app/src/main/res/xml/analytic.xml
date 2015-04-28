@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="monitoringID">UA-61732642-1</string>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <string name="com.giocodestrezza.main.MainActivity">MainActivity</string>
+    <string name="com.giocodestrezza.gioco.activity.AccelerometerGameActivity">AccellerometerGameActivity</string>
+    <string name="com.giocodestrezza.gioco.activity.CompassGameActivity">CompassGameActivity</string>
+    <string name="com.giocodestrezza.gioco.activity.ProximityGameActivity">ProximityGameActivity</string>
+    <string name="com.giocodestrezza.gioco.activity.RecapActivity">RecapActivity</string>
+    <string name="com.giocodestrezza.training.activity.AccelerometerTrainingActivity">AccelerometerTrainingActivity</string>
+    <string name="com.giocodestrezza.training.activity.ChoseActivity">ChoseActivity</string>
+    <string name="com.giocodestrezza.training.activity.CompassTrainingActivity">CompassTrainingActivity</string>
+    <string name="com.giocodestrezza.training.activity.PrroximityTrainingActivity">ProximityTrainingActivity</string>
+    <string name="com.giocodestrezza.classifica.activity.ClassificaActivity">ClassificaActivity</string>
+
+    <integer name="dispatchPeriod">30</integer>
+
+    </resources>

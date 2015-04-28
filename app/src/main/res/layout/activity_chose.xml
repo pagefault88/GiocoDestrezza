@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.giocodestrezza.training.activity.ChoseActivity">
+
+    <TextView
+        android:id="@+id/chose_game_tv"
+        android:text="@string/chose_training_message"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/acc_chose_btn"
+        android:text="@string/title_activity_accellerometer_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comp_chose_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="onAccelerometerBtnClick"/>
+
+    <Button
+        android:id="@+id/comp_chose_btn"
+        android:text="@string/title_activity_compass_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCompassBtnClick"/>
+
+    <Button
+        android:id="@+id/prox_chose_btn"
+        android:text="@string/title_activity_proximity_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onProximityBtnClick"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/comp_chose_btn"
+        android:layout_alignRight="@+id/comp_chose_btn"
+        android:layout_alignEnd="@+id/comp_chose_btn" />
+
+</RelativeLayout>

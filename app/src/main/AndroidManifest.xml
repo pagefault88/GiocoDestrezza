@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.giocodestrezza" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/fit_ico"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gioco.activity.AccellerometerGameActivity"
+            android:label="@string/title_activity_accellerometer_game"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".gioco.activity.CompassGameActivity"
+            android:label="@string/title_activity_compass_game"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".gioco.activity.ProximityGameActivity"
+            android:label="@string/title_activity_proximity_game"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".gioco.activity.RecapActivity"
+            android:label="@string/title_activity_recap"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".classifica.activity.ClassificaActivity"
+            android:label="@string/title_activity_classifica"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".main.MainActivity">
+        </activity>
+        <activity
+            android:name=".training.activity.ChoseActivity"
+            android:label="@string/title_activity_chose"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".main.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.giocodestrezza.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".training.activity.AccelerometerTrainingActivity"
+            android:label="@string/title_activity_accelerometer_training"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".training.activity.ChoseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".training.activity.ChoseActivity" />
+        </activity>
+        <activity
+            android:name=".training.activity.PrroximityTrainingActivity"
+            android:label="@string/title_activity_prroximity_training"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".training.activity.ChoseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".training.activity.ChoseActivity" />
+        </activity>
+        <activity
+            android:name=".training.activity.CompassTrainingActivity"
+            android:label="@string/title_activity_compass_training"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".training.activity.ChoseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".training.activity.ChoseActivity" />
+        </activity>
+    </application>
+
+</manifest>
