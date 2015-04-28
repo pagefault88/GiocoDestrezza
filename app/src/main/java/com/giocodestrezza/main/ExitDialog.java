@@ -29,6 +29,7 @@ public class ExitDialog extends DialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 ExitDialog.this.getDialog().cancel();
+                //just test
             }
         });
         return builder.create();

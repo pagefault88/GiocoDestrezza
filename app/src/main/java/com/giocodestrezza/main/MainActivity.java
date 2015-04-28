@@ -32,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
         tracker.enableAdvertisingIdCollection(true);
         tracker.setScreenName("com.giocodestrezza.main.MainActivity");
         tracker.send(new HitBuilders.AppViewBuilder().build());
+        //just a test
     }
 
     public void clickBtnStart(View v){
